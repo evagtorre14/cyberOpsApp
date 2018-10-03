@@ -1,0 +1,52 @@
+.card-background-page {
+    margin-top:5%;
+    @media screen and (max-width:668px){
+        height:100px;
+    }
+    height:150px;
+
+    ion-card {
+      position: relative;
+      text-align: center;
+    color: red;
+    }
+  
+    .card-title {
+      position: absolute;
+      top: 25%;
+      font-size: 3.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+      @media screen and (max-width:668px){
+          font-size: 1.0em;
+          top:50%;
+      }
+      @media screen and (min-width:668px) and (max-width:1200px){
+        font-size: 2.0em;
+        top:25%;
+      }
+    
+    }
+
+  }
+.letra{
+    font-size: 1.5rem;
+    font-family: 'trebuchet ms';
+    letter-spacing: 1px;
+}
+
+
+.rectangulo {
+  text-align: center;
+  align-content: center;
+width: 75%; 
+height: 85%;
+border: 3px solid rgb(180, 207, 229);
+}
+.icon2{
+
+width: 45PX;
+height: 45px;
+color: #006ec1;
+}

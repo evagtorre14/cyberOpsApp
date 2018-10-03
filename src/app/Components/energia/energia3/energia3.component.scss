@@ -1,0 +1,55 @@
+ion-grid{
+    background-color:rgb(52, 62, 66);
+    height:100%;
+    ion-row{
+        text-align: center;
+    }
+    ion-card{
+        margin-top: 10%;
+        color: white;
+        box-shadow: none;
+        text-align: justify;
+        ion-card-header{
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        ion-card-content{
+           font-size: 17px;
+        }
+    }
+    .textoRecomendacion{
+        margin-top: 15%;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    
+    .foto{
+        background-image: url(../../../../assets/imgs/candado4.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+
+     
+    }
+    .rectangulo {
+        margin-top:1%;
+        color: white;
+        text-align: justify;
+        align-content: center;
+        width: 90%; 
+        height: 85%;
+        border: 1px solid rgb(255, 222, 57);
+        
+    }
+    .icon2{
+        margin-left: 40%;
+        align-items: center;
+        width: 45PX;
+        height: 45px;
+        color: rgb(255, 222, 57);
+        }
+    
+}

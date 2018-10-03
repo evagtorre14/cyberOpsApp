@@ -1,0 +1,53 @@
+ion-grid{
+    height:100%;
+    background-image: url(../../../../assets/imgs/ordenador.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    .rowA{
+        margin-bottom: 5%;
+    }
+    ion-row{
+        margin-top: 5%;
+        text-align: center;
+    }
+    ion-card{
+        color: rgb(52, 64, 67);
+        box-shadow: none;
+        text-align: justify;
+        ion-card-header{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        ion-card-content{
+            font-size: 17px;
+        }
+        
+       
+      
+    }
+    .textoRecomendacion{
+        
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .rectangulo {
+        color: rgb(52, 64, 67);
+        text-align: justify;
+        align-content: center;
+        width: 90%; 
+        height: 85%;
+        border: 3px solid rgb(180, 207, 229);
+        background-color: rgb(249, 251, 253);
+        
+      }
+    .icon2{
+      margin-left: 40%;
+      align-items: center;
+      width: 45PX;
+      height: 45px;
+      color: #006ec1;
+      }
+    
+}

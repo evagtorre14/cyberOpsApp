@@ -1,0 +1,49 @@
+ion-grid{
+    height:100%;
+    
+
+    .card1{
+        background-image: url(../../../assets/imgs/conta2-bicubic.jpg);
+      
+        
+        
+        color: white;
+        box-shadow: none;
+        text-align: justify;
+        ion-card-header{
+            margin-top: 6%;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        ion-card-content{
+            font-size: 17px;
+        }
+    }
+    .textoRecomendacion{
+        margin-top: 5%;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .rectangulo {
+        margin-top:1%;
+        background-color: white;
+        color: black;
+        text-align: justify;
+        align-content: center;
+        width: 95%; 
+        height: 100%;
+        border: 3px solid rgb(244, 228, 63);;
+        
+        
+      }
+    .icon2{
+      margin-left: 40%;
+      align-items: center;
+      width: 45PX;
+      height: 45px;
+      color: rgb(255, 222, 57);;
+      }
+      .img1{
+          margin-left: 5%;
+      }
+}

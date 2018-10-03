@@ -1,0 +1,54 @@
+
+
+   <ion-grid>
+      <ion-row class="card-background-page">
+          <ion-card  *ngFor= "let article of data.articles">
+              <img src="../../assets/imgs/finanzas.jpg"/>
+              <div class="card-title">{{article.title}}</div>
+            </ion-card>
+      </ion-row>
+        
+      <ion-row>
+          <ion-col size-xl="6" size-sm="12">
+            <ion-card *ngFor= "let article of data.articles">
+              <img [src]="article.urlToImage"/>
+              <div class="card-subtitle">{{article.description}}}</div>
+            </ion-card>
+          </ion-col>
+
+          <ion-col size-xl="6" size-sm="12">
+            <ion-row>
+              <ion-card  class="my-fixed-item">
+                <ion-card-content>
+                  <app-chart1></app-chart1>
+                </ion-card-content>
+              </ion-card>
+            </ion-row>
+              
+            <ion-row>
+                <ion-col>
+                    <ion-card class="rectangulo">
+                      <ion-card-content>
+                        <ion-icon name="thermometer" class="icon2"></ion-icon>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      </ion-card-content>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col>
+                    <ion-card class="rectangulo">
+                        <ion-card-content>
+                          <ion-icon name="thermometer" class="icon2"></ion-icon>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </ion-card-content>
+                      </ion-card>
+                </ion-col>
+            </ion-row>
+          
+          </ion-col>
+        
+      </ion-row>
+    
+  </ion-grid>
+
+
