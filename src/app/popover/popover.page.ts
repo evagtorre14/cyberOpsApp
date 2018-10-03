@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavParams, PopoverController } from '@ionic/angular';
+import { ChooseNewsService } from '../choose-news.service';
 
 @Component({
   selector: 'app-popover',
@@ -8,27 +9,17 @@ import { NavParams, PopoverController } from '@ionic/angular';
 })
 export class PopoverPage implements OnInit {
 
-  public keyWords = [
-    { val: 'PUE', isChecked: false },
-    { val: 'Energia', isChecked: false },
-    { val: 'IT', isChecked: false },
-    { val: 'Emisiones', isChecked: false },
-    { val: 'Potencia', isChecked: false },
-    { val: 'Ahorro', isChecked: false },
-    { val: 'Gasto', isChecked: false },
-    { val: 'Temperatura', isChecked: false },
-    { val: 'Refrigeración', isChecked: false },
-    { val: 'ERE', isChecked: false },
-    { val: 'DCPE', isChecked: false }
-   
-  ];
+  public keyWords = [];
   keyWordsSelected=[];
-  constructor( private navParams: NavParams, private popoverController: PopoverController) { 
+  constructor( private navParams: NavParams, 
+               private popoverController: PopoverController,
+               private newsService: ChooseNewsService) { 
+      
 
   }
 
   ngOnInit() {
-    
+    this.keyWords=this.newsService.keyWords;
   }
   closePopover(){
     
@@ -42,6 +33,9 @@ export class PopoverPage implements OnInit {
       }
     }
     console.log("Esto contiene" + this.keyWordsSelected);
+    this.newsService.keyWordsSelected=this.keyWords;
+    this.newsService.keyWords=this.keyWords;
+    //[][][][]][]aquí volveremos a hacer la llamada a la api para cargar los datos.
     this.popoverController.dismiss();
   }
 

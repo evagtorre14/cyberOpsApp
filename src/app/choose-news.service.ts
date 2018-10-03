@@ -13,8 +13,25 @@ export class ChooseNewsService {
   data2;
   data3;
   tipoNoticia;
-  constructor(private http: HttpClient) {
 
+  keyWordsSelected= [];
+  public keyWords = [];
+
+  constructor(private http: HttpClient) {
+    this.keyWords = [
+      { val: 'PUE', isChecked: false },
+      { val: 'Energia', isChecked: false },
+      { val: 'IT', isChecked: false },
+      { val: 'Emisiones', isChecked: false },
+      { val: 'Potencia', isChecked: false },
+      { val: 'Ahorro', isChecked: false },
+      { val: 'Gasto', isChecked: false },
+      { val: 'Temperatura', isChecked: false },
+      { val: 'Refrigeración', isChecked: false },
+      { val: 'ERE', isChecked: false },
+      { val: 'DCPE', isChecked: false }
+     
+    ];
    }
   getData(url){
     return this.http.get(`${API_URL}/${url}&apikey=${API_KEY}`)

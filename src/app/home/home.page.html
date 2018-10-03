@@ -1,51 +1,48 @@
 <ion-header>
-  	
+
   <ion-toolbar>
     <ion-grid>
       <ion-row>
-        <ion-col size="1">
-            <i class="icon_upm"></i>
+        <ion-col size="4">
+          <i class="icon_upm"></i>
         </ion-col>
-        <ion-col size="5.5">
-            
-            <ion-title class="page_title">{{tipoNoticia}}</ion-title>
+        <ion-col size="8">
+
+          <ion-title class="page_title">{{tipoNoticia}}</ion-title>
+        </ion-col>
+       
+        <ion-col size="1.5">
+          <ion-button color="primary" expand="full" (click)=changeToMedioambiente()>Medio<br> Ambiente </ion-button>
         </ion-col>
         <ion-col size="1.5">
-            <ion-button color="primary" expand="full" (click)=changeToMedioambiente()>Medio<br> Ambiente </ion-button>
-          </ion-col>
-          <ion-col size="1.5">
-              <ion-button color="primary" expand="full" (click)=changeToEnergia()>Energía</ion-button>
-            </ion-col>
-            <ion-col size="1.5">
-                <ion-button color="primary" expand="full" (click)=changeToFinanciero()>Finanzas</ion-button>
-              </ion-col>
-        
-        <ion-col size="1">
-          
-         
-            <ion-button (click)="openPopover($event)">Open PopOver</ion-button>
-        
-         
-           
+          <ion-button color="primary" expand="full" (click)=changeToEnergia()>Energía</ion-button>
         </ion-col>
+        <ion-col size="1.5">
+          <ion-button color="primary" expand="full" (click)=changeToFinanciero()>Finanzas</ion-button>
+        </ion-col>
+        <ion-col size="7.5">
+          <ion-button float-right (click)="openPopover($event)">KeyWords</ion-button>
+        </ion-col>
+
+        
       </ion-row>
     </ion-grid>
-    
+
   </ion-toolbar>
-  
+
 </ion-header>
 
 <ion-content *ngIf="medioAmbiente">
-    <br><br><br><br>
-   <app-medio-ambiente></app-medio-ambiente>
+  <br><br><br><br>
+  <app-medio-ambiente></app-medio-ambiente>
 </ion-content>
 <ion-content *ngIf="energia">
-    <br><br><br><br>
+  <br><br><br><br>
   <app-energia3></app-energia3>
 </ion-content>
 <ion-content *ngIf="finanzas">
-    <br><br><br><br>
-    <app-finanzas></app-finanzas>
-  </ion-content>
+  <br><br><br><br>
+  <app-finanzas></app-finanzas>
+</ion-content>
 
 
