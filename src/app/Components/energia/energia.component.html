@@ -2,17 +2,17 @@
 
    <ion-grid>
       <ion-row class="card-background-page">
-          <ion-card  *ngFor= "let article of data.articles">
+          <ion-card  *ngFor= "let article of data.Noticias">
               <img src="../../assets/imgs/finanzas.jpg"/>
-              <div class="card-title">{{article.title}}</div>
+              <div class="card-title">{{article.titular}}</div>
             </ion-card>
       </ion-row>
         
       <ion-row>
           <ion-col size-xl="6" size-sm="12">
-            <ion-card *ngFor= "let article of data.articles">
-              <img [src]="article.urlToImage"/>
-              <div class="card-subtitle">{{article.description}}}</div>
+            <ion-card *ngFor= "let article of data.Noticias">
+              
+              <div class="card-subtitle">{{article.resumen}}}</div>
             </ion-card>
           </ion-col>
 

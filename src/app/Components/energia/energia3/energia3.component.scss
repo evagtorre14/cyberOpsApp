@@ -1,5 +1,10 @@
-ion-grid{
+.vista{
     background-color:rgb(52, 62, 66);
+    height:100%;
+}
+ion-grid{
+    
+    
     height:100%;
     ion-row{
         text-align: center;
@@ -19,13 +24,19 @@ ion-grid{
         }
     }
     .textoRecomendacion{
-        margin-top: 15%;
+        margin-top: 30%;
         color: white;
         font-weight: bold;
         font-size: 25px;
     }
     
     .foto{
+        @media screen and (max-width:768px){
+             
+            display: none;
+        
+        }
+
         background-image: url(../../../../assets/imgs/candado4.jpg);
         background-position: center center;
         background-repeat: no-repeat;
@@ -42,6 +53,7 @@ ion-grid{
         width: 90%; 
         height: 85%;
         border: 1px solid rgb(255, 222, 57);
+        border-radius:20px;
         
     }
     .icon2{

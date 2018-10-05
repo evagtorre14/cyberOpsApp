@@ -1,18 +1,17 @@
 <ion-header>
-
   <ion-toolbar>
     <ion-grid>
       <ion-row>
         <ion-col size="4">
-          <i class="icon_upm"></i>
+          <img class="icon_cyber">
         </ion-col>
         <ion-col size="8">
 
           <ion-title class="page_title">{{tipoNoticia}}</ion-title>
         </ion-col>
-       
+
         <ion-col size="1.5">
-          <ion-button color="primary" expand="full" (click)=changeToMedioambiente()>Medio<br> Ambiente </ion-button>
+          <ion-button class="boton" expand="full" (click)=changeToMedioambiente()>Medio<br> Ambiente </ion-button>
         </ion-col>
         <ion-col size="1.5">
           <ion-button color="primary" expand="full" (click)=changeToEnergia()>Energía</ion-button>
@@ -24,7 +23,7 @@
           <ion-button float-right (click)="openPopover($event)">KeyWords</ion-button>
         </ion-col>
 
-        
+
       </ion-row>
     </ion-grid>
 
@@ -33,12 +32,15 @@
 </ion-header>
 
 <ion-content *ngIf="medioAmbiente">
+
   <br><br><br><br>
   <app-medio-ambiente></app-medio-ambiente>
 </ion-content>
 <ion-content *ngIf="energia">
   <br><br><br><br>
-  <app-energia3></app-energia3>
+  <app-energia *ngIf="numRandom==0"></app-energia>
+  <app-energia2 *ngIf="numRandom==1"></app-energia2>
+  <app-energia3 *ngIf="numRandom==2"></app-energia3>
 </ion-content>
 <ion-content *ngIf="finanzas">
   <br><br><br><br>

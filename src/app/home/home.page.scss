@@ -1,16 +1,19 @@
+
 ion-header{
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
    
     height: 5px;
     
-    .icon_upm{
+    .icon_cyber{
        
         margin-left: 5px;
         display: block;
-        background-image: url(../../assets/imgs/logoUPM.png);
+        background-image: url(../../assets/imgs/cyberOps.jpg);
        
-        background-repeat: no-repeat, repeat;
+        background-repeat: no-repeat;
         background-size: 100% auto;
-        width: 50PX;
+        width: 170PX;
         height: 50px;
     }
     ion-title{
@@ -24,7 +27,7 @@ ion-header{
             top: 10%;
             font-family: 'trebuchet ms';
             //font-style: italic;
-            color:  #006ec1;
+            color: rgb(59, 74, 27);
             font-size: 50px;
             @media screen and (max-width:667px){
                
@@ -39,6 +42,8 @@ ion-header{
             
         }
     ion-button{
+        --background: rgb(173, 194, 86);
+  
         font-size: 18px;
         @media screen and (max-width:667px){
             font-size: 8px;
@@ -64,6 +69,4 @@ ion-header{
         
     }
 }
-ion-content{
-    
-}
+

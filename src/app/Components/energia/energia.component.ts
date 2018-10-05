@@ -14,7 +14,7 @@ export class EnergiaComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.data=this.newsService.data1;
+    this.data=this.newsService.datos;
   }
 
 }

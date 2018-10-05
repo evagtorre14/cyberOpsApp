@@ -5,9 +5,7 @@ ion-grid{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    .rowA{
-        margin-bottom: 5%;
-    }
+    
     ion-row{
         margin-top: 5%;
         text-align: center;
@@ -21,11 +19,9 @@ ion-grid{
             font-size: 30px;
         }
         ion-card-content{
+            font-weight: bold;
             font-size: 17px;
         }
-        
-       
-      
     }
     .textoRecomendacion{
         

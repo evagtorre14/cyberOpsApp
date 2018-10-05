@@ -1,0 +1,17 @@
+ion-list{
+    ion-label{
+        color: rgb(59, 74, 27);
+    }
+ion-checkbox{
+   
+    --background-checked: rgb(59, 74, 27);
+    --border-color: rgb(59, 74, 27);
+    --border-radius: 10px;
+ 
+}
+}
+ion-button{
+ --background: rgb(173, 194, 86);
+ margin-left: 30%;
+ margin-bottom: 5%;
+}

@@ -11,6 +11,7 @@ ion-grid{
         box-shadow: none;
         text-align: justify;
         ion-card-header{
+            text-align: center;
             margin-top: 6%;
             font-weight: bold;
             font-size: 30px;
@@ -20,7 +21,7 @@ ion-grid{
         }
     }
     .textoRecomendacion{
-        margin-top: 5%;
+        margin-top: 10%;
         font-weight: bold;
         font-size: 30px;
     }
@@ -44,6 +45,6 @@ ion-grid{
       color: rgb(255, 222, 57);;
       }
       .img1{
-          margin-left: 5%;
+         align-self: center;
       }
 }

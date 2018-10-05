@@ -1,11 +1,10 @@
+
 <ion-list>
   <ion-item *ngFor="let item of keyWords">
     <ion-label>{{ item.val }}</ion-label>
     <ion-checkbox slot="end" [(ngModel)]="item.isChecked"></ion-checkbox>
   </ion-item>
-  <ion-button (click)="save()">Save</ion-button>
+ </ion-list>
 
-
-</ion-list>
-  
+<ion-button (click)="save()">Guardar</ion-button>
 

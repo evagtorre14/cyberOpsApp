@@ -36,4 +36,9 @@ export class ChooseNewsService {
   getData(url){
     return this.http.get(`${API_URL}/${url}&apikey=${API_KEY}`)
   }
+  getData2(){
+   var a=this.http.get('http://127.0.0.1:5002/');
+    return a;
+    
+  }
 }
